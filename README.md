@@ -27,7 +27,7 @@ Note these attributes of CUDA code:
   ```
 * The GPU kernel function header is:
   ```cpp
-  __global__ <ret type> <function name> (args....)
+  __global__ void <function name> (args....)
   ```
 * `cudaMemcpy` is used to copy the data in between device and host.
 
@@ -45,20 +45,20 @@ d. Multiplying matrices [5:00] [**Watch**](https://moodle-courses2527.wolfware.n
 ### Environment setup
 
 To see the impact of the four parameters mentioned above on your code, we use gpgpusim to simulate the working of GPU. This simulator simulates the working of the **NVIDIA Tesla V100**.  
-To set up the environment on your PC, follow the instructions in [`Docker_setup_056.md`](Docker_setup_506.md)
+To set up the environment on your PC, follow the instructions in [`Docker_setup_506.md`](Docker_setup_506.md)
 
 > **NOTE**: Do not update any installed packages in the Linux environment. The simulator requires a certain version of packages (e.g., `gcc`) to function smoothly. Kindly leave the packages untouched.
 
 ### Compile and Run a CUDA Program in the Simulator
 
 **1. Download the vectorAdd example from GitHub**
-
+Run this in your host folder:
 ```bash
 git clone -b program1 https://github.com/Mr-Jeffery/CSC-ECE506-summer26.git
 ```
 
 **2. Navigate to the directory and compile the program**
-Ensure the NVCC flag `--cudart=shared` is used (notice this compiler flag is already configured in the provided `Makefile`).
+Run the following commands inside container. Ensure the NVCC flag `--cudart=shared` is used (notice this compiler flag is already configured in the provided `Makefile`).
 
 ```bash
 cd ~/vectorAdd/

@@ -65,7 +65,7 @@ docker exec -it gpgpusim506 /bin/bash
 
 You are now inside the container. Any files you place in `/root` will also appear in your host folder, and any files you place in your host folder will appear in `/root`.
 
-**Step 5:** When you are done, simply run `exit` inside the container When you exit the container, it will keep
+**Step 5:** When you are done, simply run `exit` inside the container. When you exit the container, it will keep
 running in the background, so you can enter it again whenever you want. You should not be
 creating new containers. To find the container that you worked on, run `docker container
 ls -a` and see a list of all your containers and their container IDs. To enter a container, run
