@@ -101,14 +101,16 @@ Complete the main host configuration in `mandelbrot.cu`:
 5. Use `cudaFree` to clean up memory.
 
 **Task 3: Visualization**
-After successful execution, your CUDA program will produce a raw binary file `mandelbrot.bin`. You can then run the `visualize.py` script provided in the `mandelbrot` directory.
-The script will read the raw binary file and create `mandelbrot.png`, visualizing the Mandelbrot set.
+After successful execution, your CUDA program will produce a raw binary file `mandelbrot.bin`. You can then run the `visualize.py` script provided in the `mandelbrot` directory. The script will read the raw binary file and create `mandelbrot.png`, visualizing the Mandelbrot set. You can adjust the script to your need, but do include the python script if you modified it. The image should look like this, but you are more than welcomed to zoom into a part where you find interesting.
+![mandelbrot](https://upload.wikimedia.org/wikipedia/commons/2/21/Mandel_zoom_00_mandelbrot_set.jpg)
 
 > **Note:** You do not have to run the Mandelbrot program on the simulator, but do include your setting if you are using your own machine.
 
-## Submission format
+## Deliverables
 
-Your submission should contain the `mandelbrot` folder (with your completed code and generated outputs) and a report file in a zip archive. The whole folder structure should look like the following:
+Your submission should contain the `mandelbrot` folder (with your completed code and generated outputs) and a report file in a zip archive. If you use GitHub to manage your code, you may use either github.com or the NC State enterprise version (github.ncsu.edu). 
+
+The whole folder structure should look like the following:
 
 ```text
 * mandelbrot
@@ -116,11 +118,13 @@ Your submission should contain the `mandelbrot` folder (with your completed code
   * mandelbrot.png
   * Makefile
 * report.pdf
+* llm_transcript.txt (optional, if an AI assistant was used)
 ```
 Your report should at least contain these parts:
-- what is the Instruction Per Cycle(IPC) of your `vectorAdd` program on the simulator and how is it calculated
-- briefly explain your Mandelbrot program implementation
-- how to run your Mandelbrot program
+- Give the IPC (instructions per cycle) count for your simulated `vectorAdd` program and explain how it is calculated.
+- Explain briefly how the Mandelbrot program is implemented.
+- State how to run your Mandelbrot program.
+- Provide a transcript of any LLM conversation, or a list of the prompts you used, if you used an AI programming assistant.
 
 The `mandelbrot` folder should contain your fractal image `mandelbrot.png`, `mandelbrot.cu` source file and a `Makefile`. Your program should be able to compile when `make` is issued in that folder.
 

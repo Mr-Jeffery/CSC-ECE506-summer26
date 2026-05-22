@@ -1,0 +1,7 @@
+services:
+  gpgpusim:
+    image: mrjeffery/gpgpusim-course:cuda_10_1
+    container_name: gpgpusim506
+    volumes:
+      - ./container_root:/root
+    command: tail -f /dev/null
