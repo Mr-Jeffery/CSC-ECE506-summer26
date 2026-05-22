@@ -45,16 +45,16 @@ services:
     image: mrjeffery/gpgpusim-course:cuda_10_1
     container_name: gpgpusim506
     volumes:
-      - /path/to/your/dir:/root/workspace
+      - /path/to/your/dir:/root
     command: tail -f /dev/null
 ```
 
 **Step 2:** Replace `/path/to/your/dir` with the actual path to a folder on your machine where you want to keep your work. For example:
 
-- **macOS/Linux:** `./my-work:/root/workspace`
-- **Windows (WSL):** `./my-work:/root/workspace`
+- **macOS/Linux:** `./my-work:/root
+- **Windows (WSL):** `./my-work:/root
 
-This maps your local `my-work` folder to `/root/workspace` inside the container.
+This maps your local `my-work` folder to `/root` inside the container.
 
 **Step 3:** Start the container in the background:
 
@@ -68,13 +68,13 @@ docker compose up -d
 docker exec -it gpgpusim506 /bin/bash
 ```
 
-You are now inside the container. Any files you place in `/root/workspace` will also appear in your host folder, and any files you place in your host folder will appear in `/root/workspace`.
+You are now inside the container. Any files you place in `/root` will also appear in your host folder, and any files you place in your host folder will appear in `/root`.
 
-**Step 5:** When you are done, stop the container:
-
-```bash
-docker compose down
-```
+**Step 5:** When you are done, simply run `exit` inside the container When you exit the container, it will keep
+running in the background, so you can enter it again whenever you want. You should not be
+creating new containers. To find the container that you worked on, run `docker container
+ls -a` and see a list of all your containers and their container IDs. To enter a container, run
+docker exec -it ContainerID /bin/bash
 
 ## 4. Check Out and Prepare GPGPU-Sim Source Code
 
