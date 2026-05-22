@@ -49,12 +49,7 @@ services:
     command: tail -f /dev/null
 ```
 
-**Step 2:** Replace `/path/to/your/dir` with the actual path to a folder on your machine where you want to keep your work. For example:
-
-- **macOS/Linux:** `./my-work:/root
-- **Windows (WSL):** `./my-work:/root
-
-This maps your local `my-work` folder to `/root` inside the container.
+**Step 2:** Replace `/path/to/your/dir` with the actual path to a folder on your machine where you want to keep your work. For example: `./my-work:/root` maps your local `my-work` folder to `/root` inside the container.
 
 **Step 3:** Start the container in the background:
 
