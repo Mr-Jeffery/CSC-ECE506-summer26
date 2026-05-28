@@ -24,7 +24,6 @@ __global__ void mandelbrotKernel(int* d_out, int width, int height, int max_iter
     // Boundary check: If the thread is outside our image dimensions, do nothing.
 
     // 2. Map the pixel coordinates (x, y) to the complex plane (c_re, c_im).
-    // This scales our image to view the area from roughly -2.0 to 1.0 on the X axis.
 
     // 3. Apply the Mandelbrot formula: z = z^2 + c
 
