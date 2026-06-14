@@ -9,17 +9,13 @@ This set of six short programming exercises will familiarize you with OpenMP and
 
 ## Procedure
 
-<!-- 1. Log into `login.hpc.ncsu.edu` with your unity id/password via ssh (e.g., via PuTTY on Windows). -->
-2. Download the OpenMP example tar-ball by executing:
+1. Clone the repository and check out the `program2` branch:
    ```bash
-   wget https://www.csc2.ncsu.edu/faculty/efg/courses/506/sum25/www/homework/p2/program2.tgz
+   git clone --branch program2 https://github.com/Mr-Jeffery/CSC-ECE506-summer26.git
+   cd CSC-ECE506-summer26
    ```
-3. Decompress the tar-ball:
-   ```bash
-   tar zfvx program2.tgz
-   ```
-4. `cd` into `program2`, and then into each of its subdirectories in succession.
-5. Check that you can compile each example by executing `make` in each subdirectory.
+2. `cd` into each subdirectory (`p1` through `p6`) in succession.
+3. Check that you can compile each example by executing `make` in each subdirectory.
 
 ---
 
