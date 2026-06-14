@@ -67,7 +67,6 @@ Hello from thread 7 of 10
 Hello from thread 8 of 10
 ```
 
-**(b)** *(5 points)* Modify the above program to use the default number of threads. [`p2b.c`]
 
 ---
 
@@ -86,6 +85,10 @@ Fix line 13 of `p3.c` to set all entries in the array to `"1"` with the `private
 **(c)** Now fix `p4.c` by using the `critical` clause (instead of the fixes of parts (a) and (b)). [`p4c.c`]
 
 **(d)** Explain the difference between part (b) and part (c).
+
+**(e)** *(5 points)* Run `p4e.c`. Three threads each increment `sum` exactly 3 times using explicit load / add / store steps with no synchronization. The maximum possible value of `sum` is 9. What is the **minimum** possible value? Prove that no smaller value is achievable, then demonstrate a specific interleaving of the 9 store operations that produces this minimum. (Hint: model each thread's work as the sequence `Load, Store, Load, Store, Load, Store`; the final value of `sum` is determined by the last `Store`.) [`p4e.c`]
+
+**(f)** *(5 points, optional)* Fix `p4e.c` using the GCC built-in `__sync_fetch_and_add(&sum, 1)` instead of any OpenMP synchronization directive. Verify the result equals `THREADS * REPS` and explain how this primitive differs from the `atomic` clause you used in part (b). [`p4f.c`]
 
 ---
 
