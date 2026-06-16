@@ -1,7 +1,7 @@
 # CSC/ECE 506: Architecture of Parallel Computers
 ## Program 2: OpenMP Programming
 
-**Due:** Friday, June 19, 2026
+**Due:** Sunday, June 21, 2026
 
 This set of six short programming exercises will familiarize you with OpenMP and the shared-memory programming model.
 
