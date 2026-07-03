@@ -1,6 +1,6 @@
 # CSC/ECE 506: Architecture of Parallel Computers
 ## Program 3: Bus-Based Cache Coherence Protocols
-**Due: Friday, July 24, 2026**
+**Due: Friday, July 17, 2026**
 
 ---
 
