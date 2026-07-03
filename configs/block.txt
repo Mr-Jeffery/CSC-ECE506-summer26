@@ -1,0 +1,15 @@
+2048k 32 2 msi lru Broadcast
+2048k 32 2 mesi lru Broadcast
+2048k 32 2 dragon lru Broadcast
+2048k 64 2 msi lru Broadcast
+2048k 64 2 mesi lru Broadcast
+2048k 64 2 dragon lru Broadcast
+2048k 128 2 msi lru Broadcast
+2048k 128 2 mesi lru Broadcast
+2048k 128 2 dragon lru Broadcast
+2048k 256 2 msi lru Broadcast
+2048k 256 2 mesi lru Broadcast
+2048k 256 2 dragon lru Broadcast
+2048k 512 2 msi lru Broadcast
+2048k 512 2 mesi lru Broadcast
+2048k 512 2 dragon lru Broadcast

@@ -1,0 +1,15 @@
+1024k 64 1 msi lru Broadcast
+1024k 64 1 mesi lru Broadcast
+1024k 64 1 dragon lru Broadcast
+1024k 64 2 msi lru Broadcast
+1024k 64 2 mesi lru Broadcast
+1024k 64 2 dragon lru Broadcast
+1024k 64 4 msi lru Broadcast
+1024k 64 4 mesi lru Broadcast
+1024k 64 4 dragon lru Broadcast
+1024k 64 8 msi lru Broadcast
+1024k 64 8 mesi lru Broadcast
+1024k 64 8 dragon lru Broadcast
+1024k 64 16384 msi lru Broadcast
+1024k 64 16384 mesi lru Broadcast
+1024k 64 16384 dragon lru Broadcast

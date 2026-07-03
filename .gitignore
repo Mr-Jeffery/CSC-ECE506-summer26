@@ -1,0 +1,23 @@
+# Build artifacts
+bin/
+*.o
+simulate_cache
+
+# Trace files — downloaded separately (see README §3.1), too large for git
+traces/*
+!traces/.gitkeep
+
+# Student-generated results
+results/q1/
+results/q2/
+results/q3/
+results/test/
+
+# Reference answer key — regenerate locally with ./gen_reference.sh (needs simulate_cache_ref)
+results/reference/streamcluster/
+results/reference/swaptions/
+results/reference/gen.log
+
+# Editor / tooling
+.claude/
+.vscode/
